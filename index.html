@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nest Notes</title></head
+  ><style>
+    [contenteditable]:empty:after {
+      content: attr(placeholder);
+      color: #c5c4c4;
+    }
+  </style>
+  <body>
+    <nav>
+      <button id="addNoteButton">Add Note</button>
+      <ul id="noteList">
+        <li>Note 1</li>
+        <li data-noteID="123">Note 1</li>
+      </ul>
+      <main>
+        <h1 contenteditable="true" id="noteTitle"></h1>
+        <div
+          role="textbox"
+          contenteditable="true"
+          id="noteContent"
+          placeholder="enter text here"
+          spellcheck="true"
+        ></div>
+        <button id="saveButton">Save</button>
+      </main>
+    </nav>
+    <script src="/app.js"></script>
+  </body>
+</html>
